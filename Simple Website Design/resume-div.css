@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300&display=swap");
+body{
+  height: 100%;
+  background-position: center;
+  background-image: url(hero-bg.jpg);
+ 
+
+}
+
+/* body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Rajdhani", sans-serif;
+   min-height: 720px;
+} */
+.container{
+  width: 200px;
+  height: 300px;
+  margin: 230px auto;
+  text-align: center;
+}
+.glass{
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
