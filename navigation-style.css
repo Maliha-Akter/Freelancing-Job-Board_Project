@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  nav {
+    background-color: transparent;
+    background: linear-gradient(-45deg, #ff8a00, #e52e71, #ae81f7, #009688, #88f2bf, #9deb9e, #f5f36c, #f5ab76, #f57c76,
+        #fc3328);
+    background-size: 400% 400%;
+    animation: gradientAnimation 14s infinite;
+    transition: background 14s ease, background-color 0.4s ease-in-out;
+  }
+  nav:after{
+    content: '';
+    clear: both;
+    display: table;
+  }
+  nav .logo{
+    float: left;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 60px;
+    
+  }
+  nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+  }
+nav ul li{
+    float: left;
+    display: inline-block;
+    margin:0 5px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+
+}
+nav ul li a:hover{
+    color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff;
+
+}
+nav ul ul li a:hover{
+    color: cyan;
+    box-shadow: none;
+}
+nav ul ul{
+    position:absolute;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+    width:200px;
+    border-top:3px solid cyan;
+}
+nav ul ul ul{
+    border-top: none;
+}
+nav ul li:hover > ul{
+    opacity: 1;
+    top:70px;
+    visibility: visible;
+}
+nav ul ul li{
+    position: relative;
+    margin: 0;
+    width:100%;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    background: black;
+
+}
+nav ul ul li a{
+    line-height: 50px;
+    white-space: nowrap; 
+
+}
+nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left:150px;
+}
+.fa-plus{
+    margin-left: 40px;
+    font-size: 15px;
+
+}

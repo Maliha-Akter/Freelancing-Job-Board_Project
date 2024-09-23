@@ -1,0 +1,31 @@
+
+.working-div-contain {
+    display: flex;
+    height: 450px;
+  }
+
+  .left-row {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 80vh;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .right-row {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .text-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
